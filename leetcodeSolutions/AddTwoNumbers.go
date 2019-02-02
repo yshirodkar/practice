@@ -19,7 +19,10 @@ Explanation: 342 + 465 = 807.
  * }
  */
 
- /* Solution 1 */
+ /* Solution 1 
+28 ms
+4.3 MB
+ */
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     head := &ListNode{} 
     out := head
@@ -76,7 +79,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     return head.Next
 }
 
-/* Solution 2 (optimised) */
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -84,6 +86,11 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
  *     Next *ListNode
  * }
  */
+
+/* Solution 2 (optimised)
+16 ms
+4.3 MB
+*/
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     head := ListNode{0, nil}
     current := &head
