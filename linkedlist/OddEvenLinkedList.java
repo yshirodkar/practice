@@ -38,7 +38,7 @@ class Solution {
 
         while (p1 != null && p2 != null) {
             ListNode t = p2.next;
-            if (t == null) 
+            if (t == null)
                 break;
 
             p1.next = p2.next;
